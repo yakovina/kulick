@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalise.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="mainscreen">
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <img src="images/logo.png" alt="logo" class="nav__logo js-nav__list">
+                <ul class="nav__list" >
+                    <li class="nav__item nav__item-drop js-nav__list">
+                        <a href="" class="nav__link">Kulic system</a>
+                        <ul class="drop">
+                            <li class="drop__item"><a href="" class="drop__link">О системе</a></li>
+                            <li class="drop__item"><a href="" class="drop__link">О компании</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav__item nav__item-drop js-nav__list"><a href="" class="nav__link">Каталог</a></li>
+                    <li class="nav__item js-nav__list"><a href="" class="nav__link">Конструктор</a></li>
+                    <li class="nav__item js-nav__list"><a href="" class="nav__link">Гарантия</a></li>
+                    <li class="nav__item js-nav__list"><a href="" class="nav__link">Доставка</a></li>
+                    <li class="nav__item js-nav__list"><a href="" class="nav__link">Магазины</a></li>
+                    <li class="nav__item js-nav__list"><a href="" class="nav__link">Франчайзинг</a></li>
+                    <li class="nav__item  js-nav__list nav__item-drop map"><a href="" class="nav__link"><img src="images/icon-map.png" alt="map"></a></li>
+                </ul>
+                <ul class="language">
+                    <li class="language__item"><a class="language__link" href="">Ru</a></li>
+                    <li class="language__item"><a class="language__link" href="">Eng</a></li>
+                    <li class="language__item"><a class="language__link" href="">Uk</a></li>
+                </ul>
+                <div class="services">
+                        <i class="fas fa-shopping-cart" id="bucket"><span class="cart-count">0</span></i>
+                        <i class="fas fa-search" id="search"></i>
+                        <i class="fas fa-user" id="user"></i>
+                        <a href="tel:0443906946" class="services__phone"><span class="binct-phone-number-1">044-390-69-81</span></a>
+
+                        <div class="modal__wrapper">
+                            <div class="modal">
+                                <div class="modal__text  bucket displaynone">
+                                    Ваша корзина пуста.
+                                </div>
+                                <a href="" class="modal__link bucket displaynone">Продолжить покупки</a>
+                                <div class="modal__text  search displaynone">
+                                        Поиск на сайте
+                                    </div>
+                                <form class="search displaynone" onsubmit="myForm()" id = "myform">
+                                        <input class ="search__input" type="text" name="q" placeholder="Начните вводить текст здесь"/> 
+                                        <button type="submit" class="search__button"><i class="fas fa-search"></i></button>
+                                        
+                                </form>
+                                <div class="close js-nav__list">
+                                        <?xml version="1.0" encoding="utf-8"?>
+                                        <!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            width="20px" height="20px" viewBox="0 0 44 44" enable-background="new 0 0 44 44" xml:space="preserve">
+                                        <g>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"  d="M38.824,0L44,5.178L5.176,44L0,38.825L38.824,0z"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"  d="M5.176,0L44,38.825L38.824,44L0,5.178L5.176,0z"/>
+                                        </g>
+                                        </svg>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <button class="header__burger" type="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+    <div class="slidershow-container">
+        <div class="slide fade">
+            <img src="images/slider_man.jpg" alt="man" class="slide__image">
+            <div class="slide__text">
+                    <img src="images/kuliclogoslider.png" alt="logo">
+                    <div class="textwrapper">
+                    <p class="slide__title slide__title-1" >Современные</p>
+                    <p class="slide__title slide__title-2" >кресла отражают вашу</p>
+                    <p class="slide__title slide__title-3" >харизму</p>
+                    <p class="slide__p">Стильный дизайн и строгие формы<br>
+                        подчеркнут вашу индивидуальность,<br>
+                        усилят харизму лидера и шарм.
+                    </p>
+                    <a href="" class="button"><span>Подробнее</span></a>
+                </div>
+
+                </div>
+        </div>
+        <div class="slide fade">
+            <img src="images/slider_woman.jpg" alt="woman" class="slide__image">
+            <div class="slide__text">
+                    <img src="images/kuliclogoslider.png" alt="logo">
+                    <div class="textwrapper">
+                    <p class="slide__title slide__title-1" >Современные</p>
+                    <p class="slide__title slide__title-2" >кресла отражают вашу</p>
+                    <p class="slide__title slide__title-3" >харизму</p>
+                    <p class="slide__p">Стильный дизайн и строгие формы<br>
+                        подчеркнут вашу индивидуальность,<br>
+                        усилят харизму лидера и шарм.
+                    </p>
+                    <a href="" class="button">Подробнее</a>
+                </div>
+
+                </div>
+        </div>
+        <div class="slide fade">
+            <img src="images/slider_oldman.jpg" alt="oldman" class="slide__image">
+            <div class="slide__text">
+                    <img src="images/kuliclogoslider.png" alt="logo">
+                    <div class="textwrapper">
+                    <p class="slide__title slide__title-1" >Современные</p>
+                    <p class="slide__title slide__title-2" >кресла отражают вашу</p>
+                    <p class="slide__title slide__title-3" >харизму</p>
+                    <p class="slide__p">Стильный дизайн и строгие формы<br>
+                        подчеркнут вашу индивидуальность,<br>
+                        усилят харизму лидера и шарм.
+                    </p>
+                    <a href="" class="button">Подробнее</a>
+                </div>
+
+                </div>
+        </div>
+        <div class="slide fade">
+            <img src="images/slider_girl.jpg" alt="girl" class="slide__image">
+            <div class="slide__text">
+                    <img src="images/kuliclogoslider.png" alt="logo">
+                    <div class="textwrapper">
+                    <p class="slide__title slide__title-1" >Современные</p>
+                    <p class="slide__title slide__title-2" >кресла отражают вашу</p>
+                    <p class="slide__title slide__title-3" >харизму</p>
+                    <p class="slide__p">Стильный дизайн и строгие формы<br>
+                        подчеркнут вашу индивидуальность,<br>
+                        усилят харизму лидера и шарм.
+                    </p>
+                    <a href="" class="button">Подробнее</a>
+                </div>
+
+                </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.1 27.5" id="icon-bracket-left" width="100%" height="100%"><path d="M13.7 27.2c-.3 0-.5-.1-.7-.3L.7 14.5c-.4-.4-.4-1 0-1.4L13 .6c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4L2.8 13.8l11.6 11.7c.4.4.4 1 0 1.4-.2.2-.4.3-.7.3z"></path></svg></a>
+        <a class="next" onclick="plusSlides(1)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.1 27.5" id="icon-bracket-right" width="100%" height="100%"><path d="M1.4 27.2c.3 0 .5-.1.7-.3l12.3-12.5c.4-.4.4-1 0-1.4L2.1.6C1.7.2 1.1.2.7.6.3 1 .3 1.6.7 2l11.6 11.7L.7 25.5c-.4.4-.4 1 0 1.4.2.2.5.3.7.3z"></path></svg></a>
+        <div class="dots">
+            <span class="dots__item" onclick="currentSlide(1)"></span>
+            <span class="dots__item" onclick="currentSlide(2)"></span>
+            <span class="dots__item" onclick="currentSlide(3)"></span>
+            <span class="dots__item" onclick="currentSlide(4)"></span>
+        </div>
+        
+    </div>
+</div>
+
+    <div class="modal2"></div>
+    <script src = "js/slider.js"></script>
+    <script src = "js/modalicons.js"></script>
+    <script src = "js/checkform.js"></script>
+    <script src = "js/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,304 @@
+li
+    list-style-type: none;
+a
+    text-decoration: none
+ul
+    margin: 0
+    padding: 0
+
+.error
+    border: 1px solid red
+
+.mainscreen
+    height: 100vh
+.container
+    margin: 0 46px;
+.header
+    background-color: #000000;
+    height: 70px
+.nav__logo
+    padding: 0 10px
+.nav
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 100%
+    height: 70px
+    padding: 10px 0
+    box-sizing: border-box
+    &__item:first-child
+            text-transform: uppercase
+    &__list
+        display: flex
+        height: 70px
+    &__link
+        font-family: "Open Sans", sans-serif
+        font-size: 15px
+        text-decoration: none
+        color: #d1d1d1
+        margin: auto
+    &__item
+        height: 70px
+        display: flex
+        align-content: center
+        padding: 0 15px
+        box-sizing: border-box
+
+.nav__item-drop
+    position: relative
+    &:after
+        font-family: FontAwesome
+        content: "\f107"
+        color: #d1d1d1
+        margin: auto
+        padding-left: 10px
+        
+
+.nav__item-drop:hover .drop
+    opacity: 1
+    visibility: visible
+
+.drop
+    position: absolute
+    top: 100%
+    z-index: 2;
+    opacity: 0;
+    margin-left: -15px
+    background-color: #ffffff;
+    width: 100%
+    box-shadow: 0 1px 3px rgba(34,25,25,.4)
+    visibility: hidden
+    &__item
+        width: 100%
+        padding: 10px 0
+        text-align: left
+        padding-left: 20px
+        box-sizing: border-box
+    &__item:hover
+        background-color: #f4cf64;
+    &__link
+        color: #000000
+        text-transform: none
+        font-family: "Open Sans", sans-serif
+        width: 100%
+
+
+.language__link
+    text-transform: uppercase
+    color: #ffffff
+    font-family: "Open Sans", sans-serif
+    font-size: 12px
+    &:hover
+        color: #f4cf64
+
+.services
+    color:  #d1d1d1
+    width: 100px
+    height: 100%
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    align-content: space-between
+    align-items: space-between
+    &__phone
+        color:  #d1d1d1
+    i
+        position: relative
+        padding-top: 10px
+    i:hover,.services__phone:hover
+        color: #f4cf64
+
+.cart-count
+    position: absolute
+    top: 0
+
+.modal__wrapper
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    background: rgba(0,0,0, 0.7)
+    top: 0;
+    left: 0;
+    padding: 5%;
+    box-sizing: border-box;
+    color: white;
+    transition: all .3s;
+    visibility: hidden;
+    transform: skew(-17deg) translateY(-100%);
+
+.modal
+    margin: 10%
+    padding: 35px
+    background-color: #ffffff
+    width: 80%  
+    position: relative
+    //width: 100%
+    &__text
+        color: #000000
+        font-size: 24px
+        font-family: "Open Sans", sans-serif
+        font-weight: 600
+        &:after
+            content: ''
+            width: 100%
+            height: 1px
+            background-color: #d1d1d1
+            display: block
+            margin-top: 26px;
+            margin-bottom: 34px;
+    &__link
+        text-transform: uppercase
+        font-size: 15px
+        text-align: center
+        font-family: "Open Sans", sans-serif
+        width: 250px
+        padding: 20px 0 
+        color: #000000
+        border: 1px solid #000
+        display: block
+        font-weight: 600
+    &__link:hover
+        color: #ffffff
+        background-color: #000000
+
+.search
+    width: 100%
+    color: #000000
+    position: relative
+    height: 46px
+    &__input
+        width: 100%
+        height: 100%
+    &__button
+        position: absolute
+        height: 50px
+        background-color: #000000
+        color: #ffffff
+        width: 50px
+        top: 0
+        right: 0
+        display: flex
+        justify-content: center
+        align-items: center
+        i
+            padding: 0
+
+
+
+
+
+
+.close
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    font-weight: 300
+    fill: #d1d1d1
+.close:hover
+    fill: #f4cf64
+
+.header__burger:focus span,
+.header__burger:hover span 
+	background: #f4cf64;
+
+
+.header__burger span 
+    width: 40px;
+    height: 4px;
+    border-radius: 2px
+    background: #f1f1f1;
+    margin-top: 3px;
+
+.header__burger 
+    display: none;
+    height: 65%;
+    margin: 30px 0
+
+@media screen and (max-width: 1240px) 
+    .container
+        margin: 0 20px
+    .nav
+        justify-content: space-between
+    .header__burger 
+        justify-self: left;
+        display: flex;
+        flex-direction: column
+        justify-content: space-around
+        order: 1
+    .nav__list
+        display: none
+    .language
+        order: 1
+        margin-left: auto
+        padding-right: 20px
+    .services
+        margin-left: auto
+        margin-right: auto
+	
+
+.modal2
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start
+    font-style: italic;
+    width: 440px;
+    height: 100vh;
+    z-index: 10;
+    background: #ffffff
+    top: 0;
+    left: 0;
+    color: white;
+    transition: all .3s;
+    visibility: hidden;
+    transform: translateX(-100%);
+
+
+.opened 
+	visibility: visible;
+	transform:  translateX(0);
+
+.modal2
+    font-style: normal
+    box-shadow: 0 1px 3px rgba(34,25,25,.4)
+    .nav__logo
+        background-color: #000000
+        object-fit: contain
+        height: 70px
+        width: 100%
+        object-position: 0 0
+        padding: 10px
+        box-sizing: border-box
+    .nav__item
+        justify-content: flex-start
+        border-top: 1px solid #d1d1d1
+        border-right: 1px solid #d1d1d1
+
+    .nav__link
+        font-style: normal
+        color:#000000
+        margin: auto 0
+        align-items: center
+        width: 100%
+    .close
+        margin: 0
+        padding: 0
+        
+@media screen and (max-width: 440px) 
+    .modal2
+        width: 100%
+    .nav__logo
+        width: 100px
+        padding-left: 0
+    .binct-phone-number-1
+        font-size: 14px
+    .language
+        margin-left: 5px
+        padding-right: 5px
